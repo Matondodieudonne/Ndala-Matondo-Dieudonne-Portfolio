@@ -29,19 +29,19 @@
         </button>
 
         <nav class="nav-menu" id="nav-menu" aria-label="Menu principal">
-          <a href="#home">Accueil</a>
-          <a href="#about">À propos</a>
-          <a href="#skills">Compétences</a>
-          <a href="#projects">Projets</a>
-          <a href="#experience">Expérience</a>
-          <a href="#contact" class="nav-cta">Contact</a>
+          <a href="#home" data-i18n="nav.home">Accueil</a>
+          <a href="#about" data-i18n="nav.about">À propos</a>
+          <a href="#skills" data-i18n="nav.skills">Compétences</a>
+          <a href="#projects" data-i18n="nav.projects">Projets</a>
+          <a href="#experience" data-i18n="nav.experience">Expérience</a>
+          <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="language-switcher" aria-label="Sélecteur de langue">
-          <button class="lang-btn active" type="button" aria-label="Français">FR</button>
-          <button class="lang-btn" type="button" aria-label="Anglais">EN</button>
-          <button class="lang-btn" type="button" aria-label="Japonais">JP</button>
-          <button class="lang-btn" type="button" aria-label="Chinois">CN</button>
+          <button class="lang-btn active" type="button" data-lang="fr" aria-label="Français" aria-pressed="true">FR</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-label="Anglais" aria-pressed="false">EN</button>
+          <button class="lang-btn" type="button" data-lang="ja" aria-label="Japonais" aria-pressed="false">JP</button>
+          <button class="lang-btn" type="button" data-lang="zh" aria-label="Chinois" aria-pressed="false">CN</button>
         </div>
       </div>
     </header>
@@ -50,36 +50,30 @@
       <section class="hero" id="home">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Portfolio professionnel</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio professionnel</p>
             <h1>
-              Je crée des solutions numériques
-              <span>modernes, claires et utiles.</span>
+              <span data-i18n="hero.title">Je crée des solutions numériques</span>
+              <span data-i18n="hero.subtitle">modernes, claires et utiles.</span>
             </h1>
-            <p class="lead">
-              Bonjour, je suis <strong>Ndala Matondo Dieudonne</strong>, passionné par
-              l’informatique, le développement web et la gestion de projets.
-              Je conçois des expériences numériques solides et professionnelles,
-              avec une attention particulière à la qualité, au design et à la valeur
-              ajoutée pour les utilisateurs.
-            </p>
+            <p class="lead" data-i18n="hero.lead">Bonjour, je suis Ndala Matondo Dieudonne, passionné par l’informatique, le développement web et la gestion de projets. Je conçois des expériences numériques solides et professionnelles, avec une attention particulière à la qualité, au design et à la valeur ajoutée pour les utilisateurs.</p>
 
             <div class="cta-group">
-              <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-              <a href="#contact" class="btn btn-secondary">Me contacter</a>
+              <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">Voir mes projets</a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.contact">Me contacter</a>
             </div>
 
             <ul class="hero-stats" aria-label="Statistiques du portfolio">
               <li>
                 <strong>+4</strong>
-                <span>ans d’expérience</span>
+                <span data-i18n="hero.stat1">ans d’expérience</span>
               </li>
               <li>
                 <strong>8+</strong>
-                <span>projets réalisés</span>
+                <span data-i18n="hero.stat2">projets réalisés</span>
               </li>
               <li>
                 <strong>100%</strong>
-                <span>engagement</span>
+                <span data-i18n="hero.stat3">engagement</span>
               </li>
             </ul>
           </div>
@@ -90,25 +84,25 @@
               src="MATONDO.png"
               alt="Photo professionnelle de Dieudonne Matondo"
             />
-            <p class="card-tag">Développeur / IT / Gestion</p>
+            <p class="card-tag" data-i18n="hero.card.tag">Développeur / IT / Gestion</p>
             <h2>Dieudonne Matondo</h2>
-            <p class="card-text">
+            <p class="card-text" data-i18n="hero.card.text">
               Je mets les technologies au service des idées et des besoins des
               entreprises.
             </p>
 
             <div class="info-list">
               <div>
-                <span>Disponibilité</span>
-                <strong>Ouvert aux missions</strong>
+                <span data-i18n="hero.card.availability_label">Disponibilité</span>
+                <strong data-i18n="hero.card.availability_value">Ouvert aux missions</strong>
               </div>
               <div>
-                <span>Spécialité</span>
-                <strong>Web & Digital</strong>
+                <span data-i18n="hero.card.specialty_label">Spécialité</span>
+                <strong data-i18n="hero.card.specialty_value">Web & Digital</strong>
               </div>
               <div>
-                <span>Localisation</span>
-                <strong>RDC / Japon</strong>
+                <span data-i18n="hero.card.location_label">Localisation</span>
+                <strong data-i18n="hero.card.location_value">RDC / Japon</strong>
               </div>
             </div>
           </div>
@@ -118,25 +112,24 @@
       <section class="about section" id="about">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">À propos</p>
-            <h2>Une approche technique, créative et orientée résultat.</h2>
+            <p class="eyebrow" data-i18n="about.eyebrow">À propos</p>
+            <h2 data-i18n="about.title">Une approche technique, créative et orientée résultat.</h2>
           </div>
 
           <div class="about-grid">
             <div class="about-copy">
-              <p>
+              <p data-i18n="about.p1">
                 Je suis un professionnel de l’informatique avec une forte appétence
                 pour le développement web, la gestion de projets et la mise en place
                 de solutions numériques utiles au quotidien.
               </p>
-              <p>
+              <p data-i18n="about.p2">
                 Mon parcours m’a permis de développer des compétences dans la
                 programmation, la gestion informatique et l’accompagnement des
                 utilisateurs, tout en élargissant mes connaissances en design web,
                 HTML, CSS et JavaScript.
               </p>
-              <p>
-                Aujourd’hui, je cherche à évoluer dans des missions où je peux
+              <p data-i18n="about.p3">
                 utiliser mes compétences pour créer des projets concrets, performants
                 et adaptés aux besoins de mes clients.
               </p>
@@ -146,28 +139,28 @@
               <article class="mini-card">
                 <span class="icon">🎓</span>
                 <div>
-                  <h3>Formation</h3>
-                  <p>2022 - 2023</p>
-                  <p>Graduat en programmation informatique</p>
-                  <p>En institut Superieur de Commerce de Kinshasa (ISC/Gombe)</p>
+                  <h3 data-i18n="about.card1.title">Formation</h3>
+                  <p data-i18n="about.card1.year">2022 - 2023</p>
+                  <p data-i18n="about.card1.degree">Graduat en programmation informatique</p>
+                  <p data-i18n="about.card1.school">En institut Superieur de Commerce de Kinshasa (ISC/Gombe)</p>
                 </div>
               </article>
 
               <article class="mini-card">
                 <span class="icon">💼</span>
                 <div>
-                  <h3>Expérience</h3>
-                  <p>2014 - 2020</p>
-                  <p>Gestion informatique, assistance, projet digital, Enseignant Informatique</p>
-                  <p>Au Centre professionnel de Formation OPOSSUM Kinshasa/Lemba </p>
+                  <h3 data-i18n="about.card2.title">Expérience</h3>
+                  <p data-i18n="about.card2.year">2014 - 2020</p>
+                  <p data-i18n="about.card2.text">Gestion informatique, assistance, projet digital, Enseignant Informatique</p>
+                  <p data-i18n="about.card2.place">Au Centre professionnel de Formation OPOSSUM Kinshasa/Lemba </p>
                 </div>
               </article>
 
               <article class="mini-card">
                 <span class="icon">🌍</span>
                 <div>
-                  <h3>Vision</h3>
-                  <p>Développement professionnel et international</p>
+                  <h3 data-i18n="about.card3.title">Vision</h3>
+                  <p data-i18n="about.card3.text">Développement professionnel et international</p>
                 </div>
               </article>
             </div>
@@ -178,15 +171,15 @@
       <section class="skills section" id="skills">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Compétences</p>
-            <h2>Des compétences variées, pensées pour le numérique.</h2>
+            <p class="eyebrow" data-i18n="skills.eyebrow">Compétences</p>
+            <h2 data-i18n="skills.title">Des compétences variées, pensées pour le numérique.</h2>
           </div>
 
           <div class="skills-grid">
             <article class="skill-card">
               <div class="skill-icon">&lt;/&gt;</div>
-              <h3>Développement web</h3>
-              <p>Création de sites web modernes, structurés et adaptés aux besoins.</p>
+              <h3 data-i18n="skills.card1.title">Développement web</h3>
+              <p data-i18n="skills.card1.text">Création de sites web modernes, structurés et adaptés aux besoins.</p>
               <div class="tags">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -196,8 +189,8 @@
 
             <article class="skill-card">
               <div class="skill-icon">🖥️</div>
-              <h3>Gestion informatique</h3>
-              <p>Organisation des outils, maintenance et support technique.</p>
+              <h3 data-i18n="skills.card2.title">Gestion informatique</h3>
+              <p data-i18n="skills.card2.text">Organisation des outils, maintenance et support technique.</p>
               <div class="tags">
                 <span>IT</span>
                 <span>Support</span>
@@ -207,8 +200,8 @@
 
             <article class="skill-card">
               <div class="skill-icon">📈</div>
-              <h3>Gestion de projets</h3>
-              <p>Planification, coordination, suivi des missions et objectifs.</p>
+              <h3 data-i18n="skills.card3.title">Gestion de projets</h3>
+              <p data-i18n="skills.card3.text">Planification, coordination, suivi des missions et objectifs.</p>
               <div class="tags">
                 <span>Planning</span>
                 <span>Organisation</span>
@@ -218,8 +211,8 @@
 
             <article class="skill-card">
               <div class="skill-icon">🌐</div>
-              <h3>Présence digitale</h3>
-              <p>Mise en ligne, visibilité et amélioration de la présence numérique.</p>
+              <h3 data-i18n="skills.card4.title">Présence digitale</h3>
+              <p data-i18n="skills.card4.text">Mise en ligne, visibilité et amélioration de la présence numérique.</p>
               <div class="tags">
                 <span>WordPress</span>
                 <span>SEO</span>
@@ -233,8 +226,8 @@
       <section class="projects section" id="projects">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Projets</p>
-            <h2>Quelques réalisations qui reflètent mon travail.</h2>
+            <p class="eyebrow" data-i18n="projects.eyebrow">Projets</p>
+            <h2 data-i18n="projects.title">Quelques réalisations qui reflètent mon travail.</h2>
           </div>
 
           <div class="projects-grid">
@@ -306,35 +299,35 @@
       <section class="experience section" id="experience">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Parcours</p>
-            <h2>Formation et expériences qui ont façonné mon profil.</h2>
+            <p class="eyebrow" data-i18n="experience.eyebrow">Parcours</p>
+            <h2 data-i18n="experience.title">Formation et expériences qui ont façonné mon profil.</h2>
           </div>
 
           <div class="timeline">
             <article class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <span class="timeline-date">2014 – 2021</span>
-                <h3>Gérant principal – Opossum Center</h3>
-                <p>Gestion informatique, accompagnement des utilisateurs et activité liée à la programmation.</p>
+                <span class="timeline-date" data-i18n="experience.item1.date">2014 – 2021</span>
+                <h3 data-i18n="experience.item1.title">Gérant principal – Opossum Center</h3>
+                <p data-i18n="experience.item1.text">Gestion informatique, accompagnement des utilisateurs et activité liée à la programmation.</p>
               </div>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <span class="timeline-date">Formation supérieure</span>
-                <h3>Graduat en programmation informatique</h3>
-                <p>Institut Supérieur de Commerce, Kinshasa, République démocratique du Congo.</p>
+                <span class="timeline-date" data-i18n="experience.item2.date">Formation supérieure</span>
+                <h3 data-i18n="experience.item2.title">Graduat en programmation informatique</h3>
+                <p data-i18n="experience.item2.text">Institut Supérieur de Commerce, Kinshasa, République démocratique du Congo.</p>
               </div>
             </article>
 
             <article class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <span class="timeline-date">Aujourd’hui</span>
-                <h3>Développement web et gestion de projets</h3>
-                <p>Approfondissement des compétences en design, développement et solutions numériques.</p>
+                <span class="timeline-date" data-i18n="experience.item3.date">Aujourd’hui</span>
+                <h3 data-i18n="experience.item3.title">Développement web et gestion de projets</h3>
+                <p data-i18n="experience.item3.text">Approfondissement des compétences en design, développement et solutions numériques.</p>
               </div>
             </article>
           </div>
@@ -344,9 +337,9 @@
       <section class="contact section" id="contact">
         <div class="container contact-wrap">
           <div class="contact-copy">
-            <p class="eyebrow">Contact</p>
-            <h2>Discutons de ton prochain projet.</h2>
-            <p>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Discutons de ton prochain projet.</h2>
+            <p data-i18n="contact.text">
               Je suis disponible pour des missions en développement web, gestion de
               projets numériques ou accompagnement digital.
             </p>
@@ -368,20 +361,29 @@
             </div>
           </div>
 
-          <form class="contact-form" id="contact-form">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formsubmit.co/dieudomatondo50@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+            <input type="hidden" name="_template" value="table" />
+
             <label>
-              Nom
-              <input type="text" name="name" placeholder="Votre nom" required />
+              <span data-i18n="form.name_label">Nom</span>
+              <input type="text" name="name" placeholder="Votre nom" data-i18n-placeholder="form.name_placeholder" required />
             </label>
             <label>
-              Email
-              <input type="email" name="email" placeholder="Votre email" required />
+              <span data-i18n="form.email_label">Email</span>
+              <input type="email" name="email" placeholder="Votre email" data-i18n-placeholder="form.email_placeholder" required />
             </label>
             <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Décrivez votre projet" required></textarea>
+              <span data-i18n="form.message_label">Message</span>
+              <textarea name="message" rows="5" placeholder="Décrivez votre projet" data-i18n-placeholder="form.message_placeholder" required></textarea>
             </label>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-primary" data-i18n="form.submit">Envoyer</button>
           </form>
         </div>
       </section>
@@ -389,8 +391,8 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>© <span id="year"></span> Dieudonne Matondo. Tous droits réservés.</p>
-        <a href="#home">Retour en haut</a>
+        <p>© <span id="year"></span> Dieudonne Matondo. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <a href="#home" data-i18n="footer.back">Retour en haut</a>
       </div>
     </footer>
   </body>
